@@ -1,0 +1,109 @@
+.header-dropdown {
+  width: 198px;
+  height: 25px;
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+  color: #d3d4d5;
+  line-height: 1;
+
+  &.show>.btn-primary.dropdown-toggle {
+    background-color: inherit;
+    border-color: #FFF;
+  }
+
+  .dropdown-toggle {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    text-align: left;
+    padding: 4px 4px 4px 10px;
+    font-size: 12px;
+    font-weight: 600;
+    box-shadow: 1px 2px 1px #9fa2a5;
+
+    &:after {
+      position: absolute;
+      top: 8px;
+      right: 10px;
+      font-size: 30px;
+      color: #ed5f1f;
+    }
+
+    &:hover {
+      background-color: #61676b;
+    }
+
+    &:focus.btn-primary {
+      background-color: #61676b;
+      outline: none;
+      box-shadow: 1px 2px 1px #9fa2a5;
+    }
+
+    &:active.btn-primary {
+      background-color: #61676b;
+      outline: none;
+      box-shadow: 1px 2px 1px #9fa2a5;
+      border: none;
+    }
+  }
+
+  .dropdown-menu {
+    padding: 0;
+    width: 90%;
+    margin-left: 15px;
+    border-radius: 0;
+    margin-top: 6px;
+    background-color: #3a4b58;
+    border: 1px solid #818181;
+
+    &:before {
+      content: "";
+      position: absolute;
+      left: calc(50% - 11px);
+      top: -23px;
+      border: 6px solid transparent;
+      border-bottom: 16px solid #818181;
+    }
+    &:after {
+      content: "";
+      position: absolute;
+      left: calc(50% - 10px);
+      top: -21px;
+      border: 5px solid transparent;
+      border-bottom: 16px solid #3a4b58;
+    }
+
+    .dropdown-item {
+      color: #fff;
+      font-size: 10px;
+      font-weight: 600;
+      height: 45px;
+      padding: 17px 0;
+      display: flex;
+      align-items: center;
+
+      .icon {
+        color: #d65d26;
+        font-size: 23px;
+        margin: 0 8px;
+      }
+
+      &:hover {
+        color: #3a4b58;
+      }
+
+      &:active {
+        background-color: #3a4b58;
+        color: #FFF;
+      }
+    }
+
+    &:hover {
+      background-color: #3a4b58;
+    }
+  }
+}
+
